@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "wolf_400";
+    src: url("/public/assets/fonts/boing-400.woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "wolf_500";
+    src: url("/public/assets/fonts/boing-500.woff2");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "wolf";
+    src: url("/public/assets/fonts/af7ae505a9eed503f8b8e6982036873e.woff2");
+}

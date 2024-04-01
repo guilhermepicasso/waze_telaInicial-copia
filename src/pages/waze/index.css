@@ -1,0 +1,243 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 21px;
+}
+.header div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.header > div > svg {
+    width: 28px;
+    height: 25px;
+}
+.header a{
+    font-family: "wolf_500";
+    font-size: 15px;
+    color: #000000;
+}
+.butaoEntrar{
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding: 7px 18px;
+    font-size: 16px !important;
+}
+.img_menu{
+    display: none;
+    width: 100%;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px 0px 25px;
+    gap : 30px ;
+}
+.secao1_titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1210px;
+    border-radius: 10px;
+    padding: 60px;
+    background-image: url("/public/assets/img/imgSecao1.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.secao1_titulo h1 , p{
+font-family: "wolf_500";
+font-size: 24px;
+color: #FFFFFF;
+}
+.secao1_titulo p{
+    font-size: 54px !important;
+}
+
+.secao2_comunidade{
+    width: 100%;
+    max-width: 1210px;
+    background-color: #f2f4f7;
+    border-radius: 10px;
+}
+.secao2_comunidade div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.secao2_comunidade p{
+    font-family: "wolf_400";
+    font-size: 28px;
+    color: #000000;
+    padding: 80px 60px;
+}
+
+
+.secao3_editores{
+    width: 100%;
+    max-width: 1210px;
+}
+.secao_padrao {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.texto_secao{
+    display: flex;
+    flex-direction: column;
+    background-color: #fce354;
+    border-radius: 10px;
+    line-height: 1.5;
+    padding: 80px 60px;
+    gap: 20px;
+    width: 100%;
+    max-width: 467px;
+}
+.icone {
+    width: 90px ;
+    height: auto ;
+}
+.texto_secao > p{
+    font-family: "wolf_400";
+    font-size: 28px;
+    color: #000000;
+}
+.botao_secao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    font-family: "wolf_500";
+    font-size: 20px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    color: #000000;
+}
+.img_secao{
+    width: 100%;
+    border-radius: 10px;
+    background-image: url(/public/assets/img/imgSecao3.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.secao4_beta{
+    width: 100%;
+    max-width: 1210px;
+}
+
+.secao4_beta .img_secao{
+    background-image: url(/public/assets/img/imgSecao4.webp) !important;
+}
+.secao4_beta .texto_secao{
+    background-color: #963eff !important;
+}
+.secao4_beta .texto_secao > p{
+    color: #FFFFFF !important;
+}
+
+.secao5_tradutores{
+    width: 100%;
+    max-width: 1210px;
+}
+
+.secao5_tradutores .img_secao{
+    background-image: url(/public/assets/img/imgSecao5.webp) !important;
+}
+.secao5_tradutores .texto_secao{
+    background-color: #3cf;
+}
+.secao5_tradutores .botao_secao{
+   width: 186px;
+}
+
+.secao6_apoio{
+    width: 100%;
+    max-width: 1210px;
+}
+
+.secao6_apoio .img_secao{
+    background-image: url(/public/assets/img/imgSecao6.webp) !important;
+}
+.secao6_apoio .texto_secao{
+    background-color: #ff8f00;
+}
+.secao6_apoio .botao_secao{
+    width: 186px;
+}
+
+.secao7_parceiros{
+    width: 100%;
+    max-width: 1210px;
+}
+
+.secao7_parceiros .img_secao{
+    background-image: url(/public/assets/img/imgSecao7.webp);
+}
+.secao7_parceiros .texto_secao{
+    background-color: #f2f4f7;
+}
+.secao7_parceiros .botao_secao{
+    width: 186px;
+    text-decoration: none;
+}
+.secao7_parceiros .botao_secao:hover{
+    text-decoration: underline;
+}
+@media (max-width:1024px) {
+    .secao1_titulo h1{
+        font-size: 18px;
+    }
+    .secao1_titulo p{
+        font-size: 33px !important;
+    }
+    .secao2_comunidade > div >p{
+        font-size: 18px;
+    }
+    .texto_secao{
+        max-width: 360px;
+    }
+    .texto_secao > p{
+        font-size: 18px;
+    }
+    .botao_secao{
+        font-size: 16px;
+    }
+}
+@media (max-width: 900px) {
+    .header a{
+        display: none;
+    }
+    .img_menu{
+        display: block;
+        width: 28px;
+    }
+    .secao2_comunidade > div{
+        flex-direction: column;
+    }
+    .secao_padrao{
+        flex-direction: column;
+    }
+    .secao4_beta .secao_padrao , .secao6_apoio .secao_padrao{
+        flex-direction: column-reverse;
+    }
+    .texto_secao{
+        max-width: none;
+        padding: 50px 30px;
+    }
+    .img_secao{
+        height: 685px;
+    }
+
+    
+}
+
